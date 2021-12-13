@@ -3,6 +3,7 @@
 ## Front-End
 
 Angular Universal
+ . Server-Side Rendering(SSR)
 
 ## Back-End
 
@@ -14,4 +15,5 @@ Windows Server with IISNode
 
 ## Authentication
 
-Web Tokens
+. JSON Web Tokens
+. HTTP interceptors
