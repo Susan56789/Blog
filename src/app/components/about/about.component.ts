@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  title="About";
 
-  ngOnInit(): void {
+  constructor(private titleService: Title,
+    private sharedService: SharedService) { }
+
+  
+  
+    ngOnInit(): void {
+    this.titleService.setTitle(`${this.title} : ${this.sharedService.blogTitle}`);
   }
 
 }
