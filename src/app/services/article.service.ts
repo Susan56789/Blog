@@ -15,4 +15,11 @@ export class ArticleService {
 
     return of(article);
   }
+
+  getArticle(key: string):Observable<Article>{
+    const article: Article[] = Articles.filter(
+      a => a.key === key
+    )
+    return of(article[0]);
+  }
 }

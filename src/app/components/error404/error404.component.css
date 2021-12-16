@@ -1,0 +1,19 @@
+.error{
+    text-align: center;
+    color:hotpink;
+}
+
+h3{
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    background-color: black;
+    justify-self: center;
+    border-radius: 5px;
+}
