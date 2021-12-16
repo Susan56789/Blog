@@ -1,6 +1,14 @@
-<div class="container">
-    <h1>
-        {{article.key}}
-    </h1>
-    <img [src]="article.imageUrl" />
+<div class="article">
+
+    <div class="article-image">
+        <img [src]="article.imageUrl" />
+    </div>
+
+    <h1 class="title">{{article.title}}</h1>
+    
+    <div class="meta-info">
+        {{article.date.toDateString()}}
+    </div>
+
+    <p [innerHTML]= "article.content"></p>
 </div>

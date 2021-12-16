@@ -1,0 +1,22 @@
+.article{
+    max-width:720px;
+    margin: 0 auto;
+}
+
+.article-image{
+    text-align: center;
+}
+
+img{
+    max-height: 200px;
+   width:100%;
+}
+
+.title{
+    font-size: 45px;
+}
+
+p{
+    line-height: 1.5em;
+    font-size: 20px;
+}
