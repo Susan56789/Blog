@@ -21,7 +21,7 @@ import { Error404Component } from './components/error404/error404.component';
     Error404Component
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
