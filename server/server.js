@@ -18,3 +18,6 @@ app.listen(8000, () =>{
 app.get("/",async (req, res)=>{
 res.send("Hello Node,js !");
 });
+
+//Get all articles
+require("./articles")(app);
