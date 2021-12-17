@@ -7,7 +7,7 @@
 <div>
     <h3>{{articles.title}}</h3>
     <div class="meta-info">
-{{articles.date.toDateString()}}
+{{articles.date | date}}
     </div>
     <p [innerHTML] ='articles.description'></p>
      <a routerLink="{{articles.key}}" class="continue-reading">Continue Reading</a>

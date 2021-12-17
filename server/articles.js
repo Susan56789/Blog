@@ -5,7 +5,7 @@ module.exports = async (app)=>{
         res.send(ARTICLES);
     });
 
-    app.get("/articles/key", async(req, res)=>{
+    app.get("/articles/:key", async(req, res)=>{
       res.send(ARTICLES.filter(article => article.key === req.params.key)[0])
     });
 }

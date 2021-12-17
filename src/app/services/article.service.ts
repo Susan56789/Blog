@@ -23,6 +23,6 @@ export class ArticleService {
    // )
     //return of(article[0]);
 
-    return this.http.get<Article>("http://localhost:8000/articles/"+ key)
+    return this.http.get<Article>("http://localhost:8000/articles/" + key)
   }
 }
